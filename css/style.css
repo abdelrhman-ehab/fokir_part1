@@ -1,0 +1,971 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    line-height: 1.8;
+    font-family: "Libre Baskerville", serif;
+}
+
+body p
+{
+    color: rgba(16, 15, 15, 0.482);
+}
+
+/* home page */
+/* ******************************************************************************* */
+.home-page
+{
+    background-image: url(slider-02.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.layer
+{
+    background-color: rgba(0, 0, 0, 0.755);
+    width: 100%;
+    height: 100%;
+}
+
+.nav-l:hover
+{
+    color: orange !important;
+}
+
+.navbar-brand
+{
+    width: 20%; 
+    font-size: 30px;
+    text-align: center;
+    color: orange;
+}
+
+
+.container
+{
+    height: 10%;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+ul
+{
+    width: 60%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+h1
+{
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+
+
+.content
+{
+    color: white;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1
+{
+    font-size: 70px;
+    font-weight: 850;
+    color: orange;
+}
+
+.animation::after
+{
+    content: " |";
+    animation-name: typing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes typing
+{
+    0%{content: " |";}
+    3%{content: " D |";}
+    6%{content: " De |";}
+    9%{content: " Des |";}
+    12%{content: " Desi |";}
+    15%{content: " Desig |";}
+    18%{content: " Design |";}
+    21%{content: " Designe |";}
+    24%{content: " Designer |";}
+    27%{content: " Designe |";}
+    30%{content: " Design |";}
+    33%{content: " Desig |";}
+    36%{content: " Desi |";}
+    39%{content: " Des |";}
+    42%{content: " De |";}
+    45%{content: " D |";}
+    48%{content: " |";}
+    51%{content: " D |";}
+    54%{content: " De |";}
+    57%{content: " Dev |";}
+    60%{content: " Deve |";}
+    63%{content: " Devel |";}
+    66%{content: " Develo |";}
+    69%{content: " Develop |";}
+    72%{content: " Develope |";}
+    75%{content: " Developer |";}
+    78%{content: " Develope |";}
+    81%{content: " Develop |";}
+    84%{content: " Develo |";}
+    87%{content: " Devel |";}
+    90%{content: " Deve |";}
+    93%{content: " Dev |";}
+    96%{content: " De |";}
+    99%{content: " D |";}
+    100%{content: " |";}
+}
+
+.content h3
+{
+    font-size: 30px;
+    font-weight: 850;
+}
+
+
+
+ul a
+{
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+a:hover
+{
+    /* font-size: 25px; */
+    /* color: rgb(185, 255, 32); */
+}
+
+
+/* about page */
+/* ******************************************************************************* */
+.about
+{
+    margin: 50px 0px;
+}
+
+.about-container
+{
+    width: 80%;
+    /* background-color: teal; */
+    display: flex;
+    margin: auto;
+}
+
+.about-img
+{
+    width: 50%;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box
+{
+    width: 400px;
+    height: 400px;
+    border: 8px solid rgba(53, 104, 58, 0.622);
+    position: relative;
+    border-radius: 10px;
+}
+
+.box-relative
+{
+    /* background-color: aqua; */
+    background-image: url(me.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.box-relative-relative
+{
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.207);
+    transition: height .5s, background-color .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-relative:hover .box-relative-relative
+{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.752);
+}
+
+
+.so2a p
+{
+    font-size: 33px;
+    color: rgb(255, 255, 255);
+    height: 0;
+}
+
+.box-relative:hover .so2a
+{
+    height: auto;
+}
+
+.about-descreption
+{
+    width: 50%;
+    /* background-color: orange; */
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about-descreption h3::first-letter
+{
+    color: orange;
+}
+
+.about-descreption h3
+{
+    font-size: 25px;
+    /* background-color: aqua; */
+
+}
+
+.dashed-line
+{
+    width: 100%;
+    border-bottom: 2px dashed black;
+    margin-bottom: 15px;
+}
+
+.descreption
+{
+    width: 100%;
+}
+
+.table
+{
+    width: 50%;
+}
+
+.name::after
+{
+    content: " Abdelrhman Ehab";
+    color: gray;
+}
+
+.age::after
+{
+    content: " 21";
+    color: gray;
+}
+
+.freelance::after
+{
+    content: " Available";
+    color: gray;
+}
+
+.job::after
+{
+    content: " Front-End Developer";
+    color: gray;
+}
+
+.location::after
+{
+    content: " menofya";
+    color: gray;
+}
+
+.email::after
+{
+    content: " 3bdelr7manehab@gmail.com";
+    color: gray;
+}
+
+.about-btn
+{
+    padding: 10px 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+.about-btn:hover
+{
+    background-color: teal;
+}
+
+/* service page */
+/* ******************************************************************************* */
+
+.service
+{
+    text-align: center;
+    background-color: rgba(198, 197, 205, 0.427);
+    padding: 50px 0px;
+}
+
+.service-head
+{
+    width: 100%;
+    /* background-color: teal; */
+}
+
+
+.line-style
+{
+    margin: auto;
+    width: 12%;
+    border-bottom: 1px solid orange;
+    position: relative;
+
+}
+
+.line-style::after
+{
+    content: "";
+    width: 50%;
+    height: .1px;
+    border-bottom: 1px solid orange;
+    position: absolute;
+    top: 7px;
+    right: 25%;
+}
+
+.line-style::before
+{
+    content: "";
+    width: 50%;
+    height: .1px;
+    border-bottom: 1px solid orange;
+    position: absolute;
+    bottom: 7px;
+    right: 25%;
+}
+
+.service-container
+{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon
+{
+    font-size: 27px;
+    padding-top: 50px;
+    color: orange;
+    transition: transform .5s;
+}
+
+.item:hover .icon
+{
+    transform: scale(1.1);
+}
+
+.service .item
+{
+    margin: 40px 0px;
+    transition: background-color 1s, border-radius 1s, box-shadow 1s;
+}
+
+.service .item:hover
+{
+    background-color: white ;
+    border-radius: 8px;
+    box-shadow: 0px 20px 30px rgba(128, 128, 128, 0.429);
+}
+
+h2
+{
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 10px 0px;
+}
+
+.item p
+{
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.item h3
+{
+    color:black;
+    font-size: 25px;
+    padding: 20px 0px;
+}
+
+/* portfolio page */
+/* ******************************************************************************* */
+
+.portfolio
+{
+    /* background-color: rgb(166, 237, 53); */
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.portfolio a
+{
+    color: black;
+}
+
+.portfolio-category
+{
+    padding: 40px 0px;
+    /* background-color: blueviolet; */
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.portfolio-category a
+{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.portfolio-category a:hover
+{
+    color: orange;
+}
+
+.portfolio .container
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+}
+
+.portfolio .item
+{
+    width: 31%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+.port-layer
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s;
+}
+
+.portfolio .item:hover .port-layer
+{
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+.port-link
+{
+    position: absolute;
+    z-index: 20;
+    bottom: 20px;
+    right: 20px;
+    color: rgba(255, 166, 0, 0);
+    transition: color 1s;
+}
+
+.portfolio .item:hover .port-link
+{
+    color: orange;
+}
+
+
+
+.portfolio .item img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.port-statics
+{
+    margin: 40px 0px;
+    background-color: rgba(198, 197, 205, 0.427);
+}
+
+.port-statics-container
+{
+    width: 80%;
+    padding: 100px 0px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.port-statics-container p
+{
+    margin-bottom: 0px;
+    color: black;
+}
+
+/* feedback page */
+/* ******************************************************************************* */
+
+.feedback
+{
+    margin: 50px 0px 50px 0px;
+
+}
+
+.feedback-header
+{
+    text-align: center;
+}
+
+.card
+{
+    background-color: rgba(198, 197, 205, 0.427) ;
+    padding: 40px 0px 20px 0px;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.card-text
+{
+    width: 75%;
+}
+
+.card-location
+{
+    color: gray;
+}
+
+.text-con a
+{
+    text-decoration: none;
+    color: gray;
+}
+
+.card::after
+{
+    content: "";
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    transform: rotate(45deg);
+    right: 77%;
+    bottom: 50%;  
+    position: absolute;
+}
+
+.card-img
+{
+    border-radius: 50%;
+    width: 15%;
+    height: 30%;
+    position: absolute;
+    top: 17%;
+    left: 4%;
+    z-index: 5;
+}
+
+.card-img img
+{
+    border-radius: 50%;
+    width: 100%;
+
+}
+
+.raiting
+{
+    color: orange;
+}
+
+/* contact page */
+/* ******************************************************************************* */
+.contact
+{
+    background-color: rgba(198, 197, 205, 0.427);
+    padding: 50px 0px;
+}
+.contact-header
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-container
+{
+    margin: 50px 0px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.con-name
+{
+    width: 48%;
+    
+}
+
+.con-email
+{
+    width: 48%;
+}
+
+.con-subject
+{
+    width: 100%;
+    padding: 4px;
+    margin: 20px 0px;
+
+}
+
+.con-input
+{
+    border: solid 1px gray;
+    padding: 4px 0px;
+    border-radius: 7px;
+    outline: none;
+}
+
+.con-input:focus
+{
+    border-color: orange;
+}
+
+.con-btn
+{
+    padding: 5px 15px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+.con-input
+{
+    border-radius: 7px;
+}
+
+.con-btn:hover
+{
+    background-color: teal;
+}
+
+/* footer page */
+/* ******************************************************************************* */
+
+.footer
+{
+    width: 100%;
+    background-color: rgba(23, 19, 19, 0.688);
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.footer-icons
+{
+    margin: auto;
+    padding-bottom: 20px; 
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-icons a
+{
+    font-size: 20px;
+    color: white;
+    transition: color .5s;
+}
+
+.footer-icons a:hover
+{
+    color: orange;
+}
+
+.footer .copy-right a
+{
+    text-decoration: none;
+    color: orange;
+}
+
+.footer .copy-right a::before
+{
+    color: white;
+    content: "Copy Right 2018 © By ";
+}
+
+.footer .copy-right a::after
+{
+    color: white;
+    content: " All Rights Reserved";
+}
+
+/* media query */
+/* ******************************************************************************* */
+
+@media screen and (max-width:600px){
+    .container{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        font-size: 18px;
+    }
+
+    .navbar ul a{
+        font-size: 15px;
+    }
+
+    .content .content-c h1{
+        font-size: 35px;
+        font-weight: 850;
+    }
+
+    .content .content-c h3{
+        font-size: 20px;
+        font-weight: 850;
+    }
+
+    .about-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-img{
+        width: 100%;
+        margin: 50px 30px;
+    }
+
+    .box
+    {
+        width: 90%;
+        border: 0;
+    }
+
+    .box-relative
+    {
+        top: 0;
+        left: 0;
+    }
+
+    .about-descreption
+    {
+        width: 100%;
+        margin: 50px 30px;
+    }
+
+    .table{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .about-btn
+    {
+        padding: 10px 30px;
+    }
+
+
+
+}
+
+@media screen and (min-width:601px) and (max-width:768px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    
+    .logo{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navbar ul{
+        width: 96%;
+        margin: auto;
+    }
+
+    .about-container
+    {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-img{
+        width: 100%;
+        margin: 50px 30px;
+    }
+
+    .box
+    {
+        width: 90%;
+        border: 0;
+    }
+
+    .box-relative
+    {
+        top: 0;
+        left: 0;
+    }
+
+    .about-descreption
+    {
+        width: 100%;
+        margin: 50px 10px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px){
+    .container{
+        width: 90%;
+        /* background-color: aqua; */
+    }
+
+    .logo{
+        text-align: center;
+        /* background-color: aliceblue; */
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .logo a
+    {
+        padding-left: 0;
+    }
+
+    .navbar ul{
+        width: 65%;
+    }
+
+    .navbar ul a{
+        font-size: 18px;
+    }
+
+
+    .about-container{
+        width: 100%;
+        margin: 40px 0px;
+    }
+
+    .box
+    {
+        width: 100%;
+        border: 0;
+    }
+
+    .box-relative
+    {
+        top: 0;
+        left: 0;
+    }
+
+    .about-img
+    {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .about-descreption{
+        margin-top: 0;
+        width: 50%;
+    }
+}
+
+    
+@media screen and (min-width:993px) and (max-width:1200px){
+    .container{
+        width: 95%;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .navbar ul{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
