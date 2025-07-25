@@ -964,6 +964,53 @@ h2
     }
 }
 
+/* Your current CSS has already made a good start toward responsiveness with media queries. Here's an updated version with improvements to:
+
+1. Portfolio grid behavior
+
+
+2. Contact form spacing
+
+
+3. Navbar collapsibility (toggle needs to be added in HTML/JS)
+
+
+4. Overall scaling, padding, and text handling */
+
+
+
+/* Additional media queries for more breakpoints */
+@media screen and (max-width: 992px)
+{
+    .portfolio .item { width: 48%; }
+    .port-statics-container { flex-wrap: wrap; gap: 20px; } 
+}
+
+@media screen and (max-width: 768px)
+{
+    .portfolio .item { width: 100%; }
+    .service-container { flex-wrap: wrap; gap: 30px; }
+    .service .item { width: 100%; }
+    .footer-icons { width: 60%; }
+    .card { flex-direction: column; width: 90%; position: relative; }
+    .card-img { position: relative; top: auto; left: auto; width: 100px; height: 100px; margin: auto; }
+    .card::after { display: none; } }
+
+@media screen and (max-width: 576px)
+{
+    h1 { font-size: 32px; } 
+    h2 { font-size: 28px; } 
+    .nav-links { flex-direction: column; gap: 10px; } 
+    .portfolio-category { width: 100%; flex-wrap: wrap; gap: 10px; } 
+    .contact-container { width: 90%; } 
+    .con-name, .con-email { width: 100%; } 
+    .footer-icons { width: 90%; } }
+
+/* Smooth mobile-friendly button sizing */ .about-btn, .con-btn { width: 100%; box-sizing: border-box; padding: 12px; }
+
+/* Flex fallback and layout
+
+
 
 
 
